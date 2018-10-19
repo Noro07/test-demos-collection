@@ -8,9 +8,9 @@
 			document.getElementById("isLoading").style.display="";
 			$("#load").text("loading ...");
 			// this is for loading image
-			// var img1 = document.createElement('img');
-			// img1.src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539843456153&di=f012ada6d94b1e5f2944e14484d9f3a4&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201801%2F14%2F011757zkmml8mui8853j3x.jpg";
-			// document.getElementById('d').appendChild(img1);
+			var img1 = document.createElement('img');
+			img1.src = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539843456153&di=f012ada6d94b1e5f2944e14484d9f3a4&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201801%2F14%2F011757zkmml8mui8853j3x.jpg";
+			document.getElementById('d').appendChild(img1);
 
 			// this is for loading script
       var _doc=document.getElementsByTagName('head')[0];  
@@ -21,7 +21,7 @@
 
 			$(document).ready(function(){
 			  // change script to img if want to use image comments
-			  $("script").load(function(){
+			  $("img").load(function(){
 			    $("#load").text("loaded");
 				document.getElementById("isLoading").style.display="none";
 			  });
